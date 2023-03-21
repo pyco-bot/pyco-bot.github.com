@@ -1,17 +1,17 @@
 <html>
   
-<body>
+<body style="background-color:#33475b">
     <h1>   THIS IS PRIVATE  </h1>
     <p>
         there is no content here just me all capsing through issues please leave if not me
     </p>
    
-    <p>
+    <p id="fart">
         alright me, enter your super secret pass code:
     </p>
-    Name:<input type="text" id="myText" value="Mickey">
-    <button type="button" onclick="myFunction()">Try it</button>
-    <p id="demo"></p>
+    <input type="text" id="myText" value="Mickey">
+    <button type="button" onclick="myFunction()">verify</button>
+
   
       
     <script>
@@ -19,7 +19,12 @@
     // Here the value is stored in new variable x 
     function myFunction() {
         var x = document.getElementById("myText").value;
-        document.getElementById("demo").innerHTML = x;
+        if(x != "1123") {
+           document.getElementById("fart").innerHTML = "YOU SON OF A BITCH YOU'RE NOT ME!!!!!!!!!";
+        }
+        else{
+           window.location.href = 'diary.html'
+        }
     }
     </script>
 </body>
