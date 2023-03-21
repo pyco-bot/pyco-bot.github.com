@@ -1,28 +1,27 @@
 <html>
-  <head> 
-    <title>Sorry!</title>
-  </head>
-<body>
-  <body style="background-color:#33475b">
-  <h1>Don't come in here there are no juicy secrets just me all caps ranting at things</h1>
-    <p id="p1">Aight now that those guys are gone what's up me enter your super secret password.</p>
-    
-    <input type="password" id="pass" name="input" required
-       minlength="4" maxlength="4" size="4">
-       <button type="button" onclick="check();">verify</button>
-    
-    <script>
-        function check(){
-            var x = document.getElementById("pass").value;
-        document.getElementById("demo").innerHTML = x;
-          if(x != "1123"){
-            document.getElementById("p1").innerHTML = "you son of a bitch!!!! you're not me!!!!!!!!!";
-          }
-          else{
-            window.location.href = 'diary.html';
-          }
-        }
-    </script>
   
+<body>
+    <h1>   THIS IS PRIVATE  </h1>
+    <p>
+        there is no content here just me all capsing through issues please leave if not me
+    </p>
+   
+    <p>
+        alright me, enter your super secret pass code:
+    </p>
+    Name:<input type="text" id="myText" value="Mickey">
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+  
+      
+    <script>
+      
+    // Here the value is stored in new variable x 
+    function myFunction() {
+        var x = document.getElementById("myText").value;
+        document.getElementById("demo").innerHTML = x;
+    }
+    </script>
 </body>
+  
 </html>
