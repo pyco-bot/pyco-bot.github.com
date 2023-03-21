@@ -1,0 +1,28 @@
+<html>
+  <head> 
+    <title>Sorry!</title>
+  </head>
+<body>
+  <body style="background-color:#33475b">
+  <h1>Don't come in here there are no juicy secrets just me all caps ranting at things</h1>
+    <p id="p1">Aight now that those guys are gone what's up me enter your super secret password.</p>
+    
+    <input type="password" id="pass" name="input" required
+       minlength="4" maxlength="4" size="4">
+       <button type="button" onclick="check();">verify</button>
+    
+    <script>
+        function check(){
+            var x = document.getElementById("pass").value;
+        document.getElementById("demo").innerHTML = x;
+          if(x != "1123"){
+            document.getElementById("p1").innerHTML = "you son of a bitch!!!! you're not me!!!!!!!!!";
+          }
+          else{
+            window.location.href = 'diary.html';
+          }
+        }
+    </script>
+  
+</body>
+</html>
