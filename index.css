@@ -1,4 +1,9 @@
-  .bottom {
+  .dragme {
+    position: relative;
+    cursor: move;
+		z-index: 2;
+  }  
+.bottom {
     position: absolute;
 		top: 0px;
 		left: 0px;
