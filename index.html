@@ -1,1 +1,84 @@
-<script async src="//jsfiddle.net/pyco_bot/jswr2vm3/105/embed/result/"></script>
+<html>
+
+  <body style="background-color:black">
+
+    <img id="little-guy" src="gay-little-guy.gif" alt="HAIII XD" class="dragme" onmouseover="uppies()" onmouseout="idle()">
+    <p id="text" style="color:white" >
+      hey welcome to my cool-super-hyper-giga-awesome-gamer website. To make sure this gets flagged by the feds, here's how to 		<a href= "https://www.netflix.com/watch/70196252?trackId=14170286"> make meth.</a>
+    </p>
+    <script>
+      var gotHim = 0;
+const him = document.getElementById("little-guy");
+
+
+
+function uppies() {
+    him.src = "gayer-little-guy.gif";
+}
+
+function idle() {
+		him.src = "gay-little-guy.gif";
+}
+
+
+	function startDrag(e) {
+				// determine event object
+				if (!e) {
+					var e = window.event;
+				}
+
+				// IE uses srcElement, others use target
+				var targ = e.target ? e.target : e.srcElement;
+				if (targ == him){
+					him.src = "https://i.postimg.cc/YS7vZ7LH/ezgif-com-optimize.gif";
+				}
+				if (targ.className != 'dragme') {return};
+				// calculate event X, Y coordinates
+					offsetX = e.clientX;
+					offsetY = e.clientY;
+
+				// assign default values for top and left properties
+				if(!targ.style.left) { targ.style.left='0px'};
+				if (!targ.style.top) { targ.style.top='0px'};
+
+				// calculate integer values for top and left 
+				// properties
+				coordX = parseInt(targ.style.left);
+				coordY = parseInt(targ.style.top);
+				drag = true;
+
+				// move div element
+					document.onmousemove=dragDiv;
+				
+			}
+			function dragDiv(e) {
+				if (!drag) {return};
+				if (!e) { var e= window.event};
+				var targ=e.target?e.target:e.srcElement;
+				
+				
+				
+				// move div element
+				targ.style.left=coordX+e.clientX-offsetX+'px';
+				targ.style.top=coordY+e.clientY-offsetY+'px';
+				return false;
+			}
+			function stopDrag(e) {
+				drag = false;
+				var targ=e.target?e.target:e.srcElement;
+				targ.style.left='0px';
+				targ.style.top='0px';
+				
+			}
+			window.onload = function() {
+				document.onmousedown = startDrag;
+				document.onmouseup = stopDrag;
+			}
+
+			
+
+
+      
+    </script>  
+  </body>
+</html>
