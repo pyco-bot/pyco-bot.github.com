@@ -1,25 +1,30 @@
 <html>
-<head>
-	<link rel="stylesheet" href="index.css">
-</head>
+
   <body style="background-color:black">
 
-    <img id="little-guy" src="gay-little-guy.gif" alt="HAIII XD" class="dragme" onmouseover="uppies()" onmouseout="idle()">
-    <p id="text" style="color:white" >
-      hey welcome to my cool-super-hyper-giga-awesome-gamer website. To make sure this gets flagged by the feds, here's how to 		<a href= "https://www.netflix.com/watch/70196252?trackId=14170286"> make meth.</a>
+    <img id="bit-of-sludge" src=" https://i.postimg.cc/ZqQZdttN/bit-of-sludge.png" class="bottom">
+
+    <img id="little-guy" src="https://i.postimg.cc/hjZQJ9kp/gay-little-guy.gif" alt="HAIII XD" class="dragme" onmouseover="uppies()" onmouseout="idle()">
+    <p id="text" class="text" style="padding-top:100px">
+      hey welcome to my cool-super-hyper-giga-awesome-gamer website. to make sure this gets flagged by the feds, here's how to <a href="https://www.netflix.com/watch/70196252?trackId=14170286"> make meth.</a>
     </p>
-    <script>
-      var gotHim = 0;
+    <p id="text2" class="text">
+      great, now that that's over with, just click the link you wanna go to. all the lore is still in the google doc, but I plan to make it more like a wiki page kinda thing. it'll be cool. that might not happen though. maybe. ya never know.
+    </p>
+    <div id="top-part">
+		</div>
+	  <script>
+		  var gotHim = 0;
 const him = document.getElementById("little-guy");
 
 
 
 function uppies() {
-    him.src = "gayer-little-guy.gif";
+    him.src = "https://i.postimg.cc/nzhQcdPX/gayer-little-guy.gif";
 }
 
 function idle() {
-		him.src = "gay-little-guy.gif";
+		him.src = "https://i.postimg.cc/hjZQJ9kp/gay-little-guy.gif";
 }
 
 
@@ -28,11 +33,18 @@ function idle() {
 				if (!e) {
 					var e = window.event;
 				}
+				//make sure it's the little guy
+				if (e.srcElement != him){
+					return;
+				}
 
 				// IE uses srcElement, others use target
 				var targ = e.target ? e.target : e.srcElement;
 				if (targ == him){
-					him.src = "https://i.postimg.cc/YS7vZ7LH/ezgif-com-optimize.gif";
+					him.src = "https://i.postimg.cc/D0jWNfSz/ezgif-com-crop.gif";
+				}
+				else{
+					return;
 				}
 				if (targ.className != 'dragme') {return};
 				// calculate event X, Y coordinates
@@ -57,9 +69,9 @@ function idle() {
 				if (!drag) {return};
 				if (!e) { var e= window.event};
 				var targ=e.target?e.target:e.srcElement;
-				
-				
-				
+				if(targ != him){
+				 return false;
+				}
 				// move div element
 				targ.style.left=coordX+e.clientX-offsetX+'px';
 				targ.style.top=coordY+e.clientY-offsetY+'px';
@@ -68,8 +80,11 @@ function idle() {
 			function stopDrag(e) {
 				drag = false;
 				var targ=e.target?e.target:e.srcElement;
-				targ.style.left='0px';
-				targ.style.top='0px';
+				if (targ == him){
+					targ.style.left='0px';
+					targ.style.top='0px';
+				}
+				
 				
 			}
 			window.onload = function() {
@@ -80,7 +95,8 @@ function idle() {
 			
 
 
-      
-    </script>  
+
+	  </script>  
   </body>
+
 </html>
