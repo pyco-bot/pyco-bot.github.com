@@ -38,4 +38,12 @@
 		right: 180px;
 		
 	}
+
+#bigmap{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: auto;
+}
 	
