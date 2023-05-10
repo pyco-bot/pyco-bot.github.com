@@ -1,4 +1,25 @@
-  .dragme{
-			position:relative;
-			cursor: move;
-		}
+  .dragme {
+    position: relative;
+    cursor: move;
+		z-index: 2;
+  }
+
+  .bottom {
+    position: absolute;
+		top: 0px;
+		left: 0px;
+  }
+	
+	.text {
+		 color: white;
+	}
+	
+	#top-part {
+		background-color: white;
+		left: 200px;
+		top: 0px;
+		height: 100px;
+		width: 100%;
+		position: absolute;
+	}
+
