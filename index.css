@@ -43,16 +43,16 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 }
 
 .mapGuy{
 	background-color: white;
 	opacity: 0.3;
 	border: 1px solid #f5f542;
-	width: 100vw;
-	height: 100vw;
+	width: 100vh;
+	height: 100%;
 	position: absolute;
 	top: 0px;
 	left: 0px;
