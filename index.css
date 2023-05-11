@@ -50,9 +50,9 @@
 .mapGuy{
 	background-color: white;
 	opacity: 0.3;
-	border: 1px solid #f5f542;
+	border: 10px solid #f5f542;
 	width: 100vh;
-	height: 100%;
+	height: 100vh;
 	position: absolute;
 	top: 0px;
 	left: 0px;
