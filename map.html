@@ -2,69 +2,166 @@
 	<head>
 		<link rel="stylesheet" href="index.css"></link>
 		<title>Map</title>
+		<script>
+			var elements = document.getElementsByClassName("mapGuy");
+ Array.from(elements).forEach(function(element) {
+      element.addEventListener('click', gotClicked);
+    });
+
+function gotClicked(elem) {
+		var article = document.getElementById("rightGuy");
+
+		switch(this.id) {
+			case "vestian":
+				article.innerHTML = '<h1>Vestian Sea</h1>';
+				break;
+			case "angreifen":
+				article.innerHTML = '<h1>Angreifen Sea</h1>';
+				break;
+			case "ost":
+				article.innerHTML = '<h1>Ost Sea</h1>';
+				break;
+			case "vertei":
+				article.innerHTML = '<h1>Vertei Sea</h1>';
+				break;
+			case "festung":
+				article.innerHTML = '<h1>Kingdom of Festung</h1>';
+				break;
+			case "sustentar":
+				article.innerHTML = '<h1>Camp Sustentar</h1>';
+				break;
+			case "daigaku":
+				article.innerHTML = '<h1>Daigaku Library</h1>';
+				break;
+			case "gdush":
+				article.innerHTML = '<h1>Ruins of G&#39Dush</h1>';
+				break;
+			case "gaifal":
+				article.innerHTML = '<h1>Gaifal&#39s Folly</h1>';
+				break;
+			case "cragna":
+				article.innerHTML = '<h1>Cragna&#39s Arm</h1>';
+				break;
+			case "drynafal":
+				article.innerHTML = '<h1>Mount Drynafal</h1>';
+				break;
+			case "cydical":
+				article.innerHTML = '<h1>Mount Cydical</h1>';
+				break;
+			case "lydafal":
+				article.innerHTML = '<h1>Mount Lydafal</h1>';
+				break;
+			case "major":
+				article.innerHTML = '<h1>Vesten Major</h1>';
+				break;
+			case "minor":
+				article.innerHTML = '<h1>Vesten Minor</h1>';
+				break;
+			case "mesa":
+				article.innerHTML = '<h1>Mesa Rim</h1>';
+				break;
+			case "velho":
+				article.innerHTML = '<h1>Velho Mal</h1>';
+				break;
+			case "vash":
+				article.innerHTML = '<h1>Lake Vash</h1>';
+				break;
+			case "cursed":
+				article.innerHTML = '<h1>Cursed Isles</h1>';
+				break;
+			case "collapse":
+				article.innerHTML = '<h1>Great Collapse</h1>';
+				break;
+			case "dregs":
+				article.innerHTML = '<h1>Pirullinen Dregs</h1>';
+				break;
+			case "totd":
+				article.innerHTML = '<h1>Sylaln&#39t</h1>';
+				break;
+			case "islar":
+				article.innerHTML = '<h1>Islar&#39s Sacrafice</h1>';
+				break;
+			case "finoak":
+				article.innerHTML = '<h1>Finoak Swamp</h1>';
+				break;
+			case "dias":
+				article.innerHTML = '<h1>The Dias</h1>';
+				break;
+			case "redacted":
+				article.innerHTML = '<h1>▀▀▀▀▀ ▀▀▀▀</h1><p>Oops! Looks like this page has been corrupted! Stop looking for things you&#39re not ready to find.</p>';
+				break;
+		}
+		
+    
+}
+		</script>
 	</head>
   
 <body style="background-color:black">
 	<div id="grandPooBah">
 		
 		<!--Vestian Sea//-->
-	<div class="mapGuy" id="vestian"></div>	
+	<div class="mapGuy" id="vestian" title="Vestian Sea"></div>	
 	<!--Angreifen Sea//-->
-	<div class="mapGuy" id="angreifen"></div>
+	<div class="mapGuy" id="angreifen" title="Angreifen Sea"></div>
 	<!--Ost Sea//-->
-	<div class="mapGuy" id="ost"></div>
+	<div class="mapGuy" id="ost" title="Ost Sea"></div>
 	<!--Vertei Sea//-->
-	<div class="mapGuy" id="vertei"></div>
+	<div class="mapGuy" id="vertei" title="Vertei Sea"></div>
 	<!--Festung//-->
-	<div class="mapGuy" id="festung"></div>
+	<div class="mapGuy" id="festung" title="Festung"></div>
 	<!--Sustentar//-->
-	<div class="mapGuy" id="sustentar"></div>
+	<div class="mapGuy" id="sustentar" title="Sustentar"></div>
 	<!--Daigaku//-->
-	<div class="mapGuy" id="daigaku"></div>
+	<div class="mapGuy" id="daigaku" title="Daigaku Library"></div>
 	<!--Ruins of G'Dush//-->
-	<div class="mapGuy" id="gdush"></div>
+	<div class="mapGuy" id="gdush" title="Ruins of G'dush"></div>
 	<!--Gaifal's Folley//-->
-	<div class="mapGuy" id="gaifal"></div>
+	<div class="mapGuy" id="gaifal" title="Gaifal's Folley"></div>
 	<!--Cragna's Arm//-->
-	<div class="mapGuy" id="cragna"></div>
+	<div class="mapGuy" id="cragna" title="Cragna's Arm"></div>
 	<!--Mount Drynafal//-->
-	<div class="mapGuy" id="drynafal"></div>
+	<div class="mapGuy" id="drynafal" title="Mount Drynafal"></div>
 	<!--Mount Cydical//-->
-	<div class="mapGuy" id="cydical"></div>
+	<div class="mapGuy" id="cydical" title="Mount Cydical"></div>
 	<!--Mount Lydafal//-->
-	<div class="mapGuy" id="lydafal"></div>
+	<div class="mapGuy" id="lydafal" title="Mount Lydafal"></div>
 	<!--Vesten Major//-->
-	<div class="mapGuy" id="major"></div>
+	<div class="mapGuy" id="major" title="Vesten Major"></div>
 	<!--Vesten Minor//-->
-	<div class="mapGuy" id="minor"></div>
+	<div class="mapGuy" id="minor" title="Vesten Minor"></div>
 	<!--Mesa Rim//-->
-	<div class="mapGuy" id="mesa"></div>
+	<div class="mapGuy" id="mesa" title="Mesa Rim"></div>
 	<!--Velho Mal//-->
-	<div class="mapGuy" id="velho"></div>
+	<div class="mapGuy" id="velho" title="Velho Mal"></div>
 	<!--Lake Vash//-->
-	<div class="mapGuy" id="vash"></div>
+	<div class="mapGuy" id="vash" title="Lake Vash"></div>
 	<!--Cursed Isles//-->
-	<div class="mapGuy" id="cursed"></div>
+	<div class="mapGuy" id="cursed" title="Cursed Lands"></div>
 	<!--Great Collapse//-->
-	<div class="mapGuy" id="collapse"></div>
+	<div class="mapGuy" id="collapse" title="Great Collapse"></div>
 	<!--Pirullinen Dregs//-->
-	<div class="mapGuy" id="dregs"></div>
+	<div class="mapGuy" id="dregs" title="Pirullinen Dregs"></div>
 	<!--Sylaln't (Tears of the Dias)//-->
-	<div class="mapGuy" id="totd"></div>
+	<div class="mapGuy" id="totd" title="Sylaln't"></div>
 	<!--Islar's Sacrafice//-->
-	<div class="mapGuy" id="islar"></div>
+	<div class="mapGuy" id="islar" title="Islar's Sacrafice"></div>
 	<!--Finaok Swamp//-->
-	<div class="mapGuy" id="finoak"></div>
+	<div class="mapGuy" id="finoak" title="Finoak Swamp"></div>
 	<!--Dias//-->
-	<div class="mapGuy" id="dias"></div>
+	<div class="mapGuy" id="dias" title="The Dias"></div>
 	<!--redacted//-->
-	<div class="mapGuy" id="redacted"></div>
+	<div class="mapGuy" id="redacted" title="ERR"></div>
 		
 		
 	</div>
+	<article id="rightGuy">
+		<h1 id="header">Welcome to the map!</h1>
+		<p id="para">Click highlighted areas of the map and locally grown lore will replace this filler text! (I will not apologize for the jank-ass click boxes that shit was annoying)</p>	
+	</article>
 	
-
-  
+		
+ 
   </body>
 	
 </html>
