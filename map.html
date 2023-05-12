@@ -2,7 +2,79 @@
 	<head>
 		<link rel="stylesheet" href="index.css"></link>
 		<title>Map</title>
-		<script>
+		
+	</head>
+  
+<body style="background-color:black">
+	<div id="grandPooBah">
+		
+		<!--Vestian Sea//-->
+	<div class="mapGuy" id="vestian" title="Vestian Sea"></div>	
+	<!--Angreifen Sea//-->
+	<div class="mapGuy" id="angreifen" title="Angreifen Sea"></div>
+	<!--Ost Sea//-->
+	<div class="mapGuy" id="ost" title="Ost Sea"></div>
+	<!--Vertei Sea//-->
+	<div class="mapGuy" id="vertei" title="Vertei Sea"></div>
+	<!--Festung//-->
+	<div class="mapGuy" id="festung" title="Festung"></div>
+	<!--Sustentar//-->
+	<div class="mapGuy" id="sustentar" title="Sustentar"></div>
+	<!--Daigaku//-->
+	<div class="mapGuy" id="daigaku" title="Daigaku Library"></div>
+	<!--Ruins of G'Dush//-->
+	<div class="mapGuy" id="gdush" title="Ruins of G'dush"></div>
+	<!--Gaifal's Folley//-->
+	<div class="mapGuy" id="gaifal" title="Gaifal's Folley"></div>
+	<!--Cragna's Arm//-->
+	<div class="mapGuy" id="cragna" title="Cragna's Arm"></div>
+	<!--Mount Drynafal//-->
+	<div class="mapGuy" id="drynafal" title="Mount Drynafal"></div>
+	<!--Mount Cydical//-->
+	<div class="mapGuy" id="cydical" title="Mount Cydical"></div>
+	<!--Mount Lydafal//-->
+	<div class="mapGuy" id="lydafal" title="Mount Lydafal"></div>
+	<!--Vesten Major//-->
+	<div class="mapGuy" id="major" title="Vesten Major"></div>
+	<!--Vesten Minor//-->
+	<div class="mapGuy" id="minor" title="Vesten Minor"></div>
+	<!--Mesa Rim//-->
+	<div class="mapGuy" id="mesa" title="Mesa Rim"></div>
+	<!--Velho Mal//-->
+	<div class="mapGuy" id="velho" title="Velho Mal"></div>
+	<!--Lake Vash//-->
+	<div class="mapGuy" id="vash" title="Lake Vash"></div>
+	<!--Cursed Isles//-->
+	<div class="mapGuy" id="cursed" title="Cursed Lands"></div>
+	<!--Great Collapse//-->
+	<div class="mapGuy" id="collapse" title="Great Collapse"></div>
+	<!--Pirullinen Dregs//-->
+	<div class="mapGuy" id="dregs" title="Pirullinen Dregs"></div>
+	<!--Sylaln't (Tears of the Dias)//-->
+	<div class="mapGuy" id="totd" title="Sylaln't"></div>
+	<!--Islar's Sacrafice//-->
+	<div class="mapGuy" id="islar" title="Islar's Sacrafice"></div>
+	<!--Finaok Swamp//-->
+	<div class="mapGuy" id="finoak" title="Finoak Swamp"></div>
+	<!--Dias//-->
+	<div class="mapGuy" id="dias" title="The Dias"></div>
+	<!--redacted//-->
+	<div class="mapGuy" id="redacted" title="ERR"></div>
+		
+		
+	</div>
+	<article id="rightGuy">
+		<h1 id="header">Welcome to the map!</h1>
+		<p id="para">Click highlighted areas of the map and locally grown lore will replace this filler text! (I will not apologize for the jank-ass click boxes that shit was annoying)</p>	
+	</article>
+	
+		
+ 
+  </body>
+	
+</html>
+
+<script>
 			var elements = document.getElementsByClassName("mapGuy");
  Array.from(elements).forEach(function(element) {
       element.addEventListener('click', gotClicked);
@@ -95,73 +167,3 @@ function gotClicked(elem) {
     
 }
 		</script>
-	</head>
-  
-<body style="background-color:black">
-	<div id="grandPooBah">
-		
-		<!--Vestian Sea//-->
-	<div class="mapGuy" id="vestian" title="Vestian Sea"></div>	
-	<!--Angreifen Sea//-->
-	<div class="mapGuy" id="angreifen" title="Angreifen Sea"></div>
-	<!--Ost Sea//-->
-	<div class="mapGuy" id="ost" title="Ost Sea"></div>
-	<!--Vertei Sea//-->
-	<div class="mapGuy" id="vertei" title="Vertei Sea"></div>
-	<!--Festung//-->
-	<div class="mapGuy" id="festung" title="Festung"></div>
-	<!--Sustentar//-->
-	<div class="mapGuy" id="sustentar" title="Sustentar"></div>
-	<!--Daigaku//-->
-	<div class="mapGuy" id="daigaku" title="Daigaku Library"></div>
-	<!--Ruins of G'Dush//-->
-	<div class="mapGuy" id="gdush" title="Ruins of G'dush"></div>
-	<!--Gaifal's Folley//-->
-	<div class="mapGuy" id="gaifal" title="Gaifal's Folley"></div>
-	<!--Cragna's Arm//-->
-	<div class="mapGuy" id="cragna" title="Cragna's Arm"></div>
-	<!--Mount Drynafal//-->
-	<div class="mapGuy" id="drynafal" title="Mount Drynafal"></div>
-	<!--Mount Cydical//-->
-	<div class="mapGuy" id="cydical" title="Mount Cydical"></div>
-	<!--Mount Lydafal//-->
-	<div class="mapGuy" id="lydafal" title="Mount Lydafal"></div>
-	<!--Vesten Major//-->
-	<div class="mapGuy" id="major" title="Vesten Major"></div>
-	<!--Vesten Minor//-->
-	<div class="mapGuy" id="minor" title="Vesten Minor"></div>
-	<!--Mesa Rim//-->
-	<div class="mapGuy" id="mesa" title="Mesa Rim"></div>
-	<!--Velho Mal//-->
-	<div class="mapGuy" id="velho" title="Velho Mal"></div>
-	<!--Lake Vash//-->
-	<div class="mapGuy" id="vash" title="Lake Vash"></div>
-	<!--Cursed Isles//-->
-	<div class="mapGuy" id="cursed" title="Cursed Lands"></div>
-	<!--Great Collapse//-->
-	<div class="mapGuy" id="collapse" title="Great Collapse"></div>
-	<!--Pirullinen Dregs//-->
-	<div class="mapGuy" id="dregs" title="Pirullinen Dregs"></div>
-	<!--Sylaln't (Tears of the Dias)//-->
-	<div class="mapGuy" id="totd" title="Sylaln't"></div>
-	<!--Islar's Sacrafice//-->
-	<div class="mapGuy" id="islar" title="Islar's Sacrafice"></div>
-	<!--Finaok Swamp//-->
-	<div class="mapGuy" id="finoak" title="Finoak Swamp"></div>
-	<!--Dias//-->
-	<div class="mapGuy" id="dias" title="The Dias"></div>
-	<!--redacted//-->
-	<div class="mapGuy" id="redacted" title="ERR"></div>
-		
-		
-	</div>
-	<article id="rightGuy">
-		<h1 id="header">Welcome to the map!</h1>
-		<p id="para">Click highlighted areas of the map and locally grown lore will replace this filler text! (I will not apologize for the jank-ass click boxes that shit was annoying)</p>	
-	</article>
-	
-		
- 
-  </body>
-	
-</html>
