@@ -45,19 +45,25 @@
   left: 0px;
   top: 0px;
   width: 100vh;
+	max-width: calc(100vw / 2);
   height: 100vh;
 	background-size: contain;
 }
 
 .mapGuy {
-  background-color: white;
-  opacity: 0.3;
   width: 100vh;
+	max-width: calc(100vw / 2);
   height: 100vh;
   position: absolute;
   top: 0px;
   left: 0px;
 }
+
+.mapGuy:hover{
+	background-color: white;
+  opacity: 0.3;
+}
+
 
 #vestian {
   clip-path: polygon(12% 18%, 14% 23%, 19% 30%, 21% 39%, 17% 50%, 12% 61%, 5% 62%, 1% 57%, 1% 48%, 4% 41%, 4% 31%, 7% 27%, 10% 21%);
@@ -174,13 +180,15 @@
   clip-path: polygon(67% 87%, 68% 85%, 69% 82%, 66% 85%);
 }
 
-#dias{
-	z-index: 999;
-	clip-path: circle(1.2% at 50% 50%);
-}
-#redacted{
-	z-index: 2;
-	clip-path: polygon(67% 87%, 68% 85%, 69% 82%, 66% 85%);
+
+
+
+
+#rightGuy{
+	position: absolute;
+	color: white;
+	top: 0;
+	left: calc(100vw / 2);
 }
 
 	
