@@ -55,6 +55,7 @@
   width: 100vh;
 	max-width: calc(100vw / 2);
   height: 100vh;
+	max-height: calc(100vw / 2);
   position: absolute;
   top: 0px;
   left: 0px;
