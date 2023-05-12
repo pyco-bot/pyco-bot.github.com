@@ -47,7 +47,8 @@
   width: 100vh;
 	max-width: calc(100vw / 2);
   height: 100vh;
-	background-size: contain;
+	max-height: calc(100vw / 2);
+  background-size: contain;
 }
 
 .mapGuy {
