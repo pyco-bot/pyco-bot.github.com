@@ -51,6 +51,14 @@
   background-size: contain;
 }
 
+.disabled{
+	visibility: hidden;
+}
+
+.enabled{
+	visibility: visible;
+}
+
 .mapGuy {
   width: 100vh;
 	max-width: calc(100vw / 2);
