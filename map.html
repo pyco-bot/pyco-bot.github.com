@@ -101,6 +101,11 @@ function gotClicked(elem) {
 				break;
 			case "sustentar":
 				article.innerHTML = '<h1>Camp Sustentar</h1>';
+				document.getElementById("grandPooBah").style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxffYOO2HEaby9piQ2cIsggm_hdz8cfV87SclKuhvW2g&s')";
+				var killEm = document.getElementsByClassName("mapGuy");
+				for (i=0; i<killEm.length;i++) {
+					killEm[i].classList.add("disabled");
+				}
 				break;
 			case "daigaku":
 				article.innerHTML = '<h1>Daigaku Hall</h1>';
